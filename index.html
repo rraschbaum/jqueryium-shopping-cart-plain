@@ -18,6 +18,55 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <tbody>
+              <tr>
+                <td class="name">Salmon</td>
+                <td class="price">$<span>60.00</span></td>
+                <td class="quantity">QTY <input type="number" value="0" min="0"/><button class="btn btn-light btn-sm cancel">cancel</button></td>
+                <td class="total">$<span></span></td>
+              </tr>
+              <tr>
+                <td class="name">Tuna</td>
+                <td class="price">$<span>50.00</span></td>
+                <td class="quantity">QTY <input type="number" value="0" min="0"/><button class="btn btn-light btn-sm cancel">cancel</button></td>
+                <td class="total">$<span></span></td>
+              </tr>
+              <tr>
+                <td class="name">Carp</td>
+                <td class="price">$<span>40.00</span></td>
+                <td class="quantity">QTY <input type="number" value="0" min="0"/><button class="btn btn-light btn-sm cancel">cancel</button></td>
+                <td class="total">$<span></span></td>
+              </tr>
+              <tr>
+                <td class="name">Pork</td>
+                <td class="price">$<span>50.00</span></td>
+                <td class="quantity">QTY <input type="number" value="0" min="0"/><button class="btn btn-light btn-sm cancel">cancel</button></td>
+                <td class="total">$<span></span></td>
+              </tr>
+              <tr>
+                <td class="name">Beef</td>
+                <td class="price">$<span>40.00</span></td>
+                <td class="quantity">QTY <input type="number" value="0" min="0"/><button class="btn btn-light btn-sm cancel">cancel</button></td>
+                <td class="total">$<span></span></td>
+              </tr>
+              <tr id="createNewItemAndPrice">
+                <td class="name"><input type="text"></td>
+                <td class="price"><input type="number" min="0"></td>
+                <td><button class="btn btn-light btn-sm create">create</button></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="btn btn-primary calculate">Calculate Total</button>
+        <h4>Total Price</h4>
+        <h4>$<span id="totalPrice"></span></h4>
+      </div>
+    </div>
   </body>
 </html>
